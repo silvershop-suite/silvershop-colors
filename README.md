@@ -50,3 +50,7 @@ modules are present.
 ## License
 
 BSD-3-Clause. See [LICENSE](LICENSE).
+
+## Credits
+
+Built and maintained by **Remy Vaartjes** (<remy@xd.nl>) — part of the **SilverShop-Suite**.
