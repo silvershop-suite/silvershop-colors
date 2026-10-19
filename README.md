@@ -7,17 +7,17 @@ swatches on the product page, and a **colour facet with swatches** for the store
 > Supersedes the upstream `silvershop/coloredvariations`: it covers the same ground (hex colour values usable as
 > variation attributes, swatch display) **and** adds product-level multi-colour tags + a search facet. Use this
 > instead — not both. (It intentionally drops coloredvariations' per-colour product images: colour *variations*
-> already carry their own images via core variation images / `silvershop/product-gallery`.)
+> already carry their own images via core variation images / `silvershop-suite/product-gallery`.)
 
 ## Requirements
 
 - Silverstripe CMS `^6.0`, SilverShop core `^6`
-- `silvershop/search` `^1` *(optional)* — for the colour facet
+- `silvershop-suite/search` `^1` *(optional)* — for the colour facet
 
 ## Installation
 
 ```bash
-composer require silvershop/colors
+composer require silvershop-suite/colors
 ```
 
 Run `dev/build?flush=1`.
@@ -35,9 +35,9 @@ Run `dev/build?flush=1`.
   variations grid — no separate relation. A product sold *in* several colours uses these colour variations as usual.
 - **Product page:** `<% include ProductColors %>` renders the product's colour tags as swatches.
 
-## Colour facet (with `silvershop/search`)
+## Colour facet (with `silvershop-suite/search`)
 
-When `silvershop/search` is installed, a **Colour facet** appears in search / category / brand navigation, rendered as
+When `silvershop-suite/search` is installed, a **Colour facet** appears in search / category / brand navigation, rendered as
 **swatch chips**. A product matches a colour when **it carries that colour as a product tag, or any of its variations
 has it as a colour attribute value** — both resolve to one "Red" filter. Registered automatically, guarded, when both
 modules are present.
