@@ -1,0 +1,14 @@
+---
+Name: silvershop-colors-graphql
+Only:
+  moduleexists: 'silvershop-suite/api-graphql'
+After:
+  - '#graphql-schema-default'
+---
+# Registers this module's _graphql/ type fragment into the default schema — only when the GraphQL overlay is
+# installed, so colors stays standalone. Adds Product.colours, which rides the REST ColorProductEnrichment.
+SilverStripe\GraphQL\Schema\Schema:
+  schemas:
+    default:
+      src:
+        silvershop-colors: 'silvershop-suite/colors: _graphql'
