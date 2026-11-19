@@ -9,11 +9,11 @@ use SilverShop\Search\Query\SearchQuery;
 use SilverStripe\ORM\DataList;
 
 /**
- * Colour facet for silvershop/search, with swatch chips. Ships here and registers into the search FacetRegistry only
- * when silvershop/search is installed (see _config/search.yml). A product matches a colour when it carries that
- * colour as a product-level {@link ColorableExtension::Colours} tag, or when one of its variations has it as a colour
- * attribute value (`Variation.AttributeValues`). Both resolve to {@link ShopColor} ids, so they merge into one option
- * per colour. Each option carries the colour's hex so the facet renders a swatch.
+ * Colour facet for silvershop-suite/search, with swatch chips. Ships here and registers into the search FacetRegistry
+ * only when silvershop-suite/search is installed (see _config/search.yml). A product matches a colour when it carries
+ * that colour as a product-level {@link ColorableExtension::Colours} tag, or when one of its variations has it as a
+ * colour attribute value (`Variation.AttributeValues`). Both resolve to {@link ShopColor} ids, so they merge into one
+ * option per colour. Each option carries the colour's hex so the facet renders a swatch.
  */
 class ColorFacet implements SearchFacet
 {

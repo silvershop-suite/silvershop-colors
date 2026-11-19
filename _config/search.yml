@@ -3,7 +3,7 @@ Name: silvershop-colors-search
 Only:
   moduleexists: silvershop-suite/search
 ---
-# Registers the colour facet into silvershop/search — only when that module is installed, so colors stays standalone.
+# Registers the colour facet into silvershop-suite/search — only when that module is installed, so colors stays standalone.
 SilverShop\Search\Facet\FacetRegistry:
   facets:
     color: '%$SilverShop\Colors\ColorFacet'
