@@ -2,13 +2,16 @@
 
 namespace SilverShop\Colors\Tests;
 
+use PHPUnit\Framework\Attributes\RequiresMethod;
 use SilverShop\Colors\ColorFacet;
 use SilverShop\Colors\ShopColor;
 use SilverShop\Model\Variation\Variation;
 use SilverShop\Page\Product;
+use SilverShop\Search\Facet\SearchFacet;
 use SilverShop\Search\Query\SearchQuery;
 use SilverStripe\Dev\SapphireTest;
 
+#[RequiresMethod(SearchFacet::class, 'apply')]
 class ColorFacetTest extends SapphireTest
 {
     protected $usesDatabase = true;
